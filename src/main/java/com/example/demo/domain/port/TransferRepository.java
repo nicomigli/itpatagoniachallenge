@@ -1,7 +1,7 @@
-package com.example.domain.port;
+package com.example.demo.domain.port;
 import java.util.List;
 
-import com.example.domain.model.Transfer;
+import com.example.demo.domain.model.Transfer;
 
 public interface TransferRepository {
     List<Transfer> getTransfersLastMonth();

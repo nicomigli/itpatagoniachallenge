@@ -2,9 +2,9 @@ package com.example.demo.infra;
 
 import org.springframework.stereotype.Repository;
 
+import com.example.demo.domain.model.Company;
+import com.example.demo.domain.port.CompanyRepository;
 import com.example.demo.entities.CompanyEntity;
-import com.example.domain.model.Company;
-import com.example.domain.port.CompanyRepository;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

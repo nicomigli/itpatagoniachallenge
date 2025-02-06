@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
-import com.example.domain.model.Company;
+import com.example.demo.domain.model.Company;
 
 @Entity
 @Table(name = "companies")

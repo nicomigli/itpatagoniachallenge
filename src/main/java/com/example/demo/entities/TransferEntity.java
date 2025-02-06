@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import com.example.domain.model.Transfer;
+import com.example.demo.domain.model.Transfer;
 
 @Entity
 @Table(name = "transfers")
