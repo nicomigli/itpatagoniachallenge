@@ -9,16 +9,14 @@ import com.example.demo.entities.CompanyEntity;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Repository
-public class CompanyRepositoryAdapter implements CompanyRepository {
+public class CompanyJpaRepositoryAdapter implements CompanyRepository {
 
     private CompanyJpaRepository companyJpaRepository;
 
-    public CompanyRepositoryAdapter(CompanyJpaRepository companyJpaRepository) {
+    public CompanyJpaRepositoryAdapter(CompanyJpaRepository companyJpaRepository) {
         this.companyJpaRepository = companyJpaRepository;
     }
 
@@ -41,15 +39,8 @@ public class CompanyRepositoryAdapter implements CompanyRepository {
     }
 
     @Override
-    public Optional<Company> findById(UUID id) {
-        return null;
-        // return companyJpaRepository.findById(id).map(CompanyEntity::toDomain);
-    }
-
-    @Override
     public void save(Company company) {
-        //return null;
-        //companyJpaRepository.save(CompanyEntity.fromDomain(company));
+        companyJpaRepository.save(CompanyEntity.fromDomain(company));
     }
 
 }

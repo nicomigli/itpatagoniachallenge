@@ -8,7 +8,6 @@ import com.example.demo.domain.model.Company;
 public interface CompanyRepository {
     List<Company> getCompaniesWithTransfersLastMonth();
     List<Company> getCompaniesAdheredLastMonth();
-    Optional<Company> findById(UUID id);
     void save(Company company);
 }
 
