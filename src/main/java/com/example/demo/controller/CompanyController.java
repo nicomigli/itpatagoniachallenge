@@ -46,7 +46,7 @@ public class CompanyController {
     }
 
     @PostMapping("/adhere")
-    public void adhereCompany(@RequestBody Company company) {
+    public void adhereCompany(@RequestBody CompanyWebModel company) {
         registerCompanyUseCase.execute(company.getCuit(),company.getBusinessName());
     }
 
